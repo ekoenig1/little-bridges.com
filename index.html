@@ -2524,26 +2524,6 @@
 </section>
 
 
-<!--call
-<section class="cid-call">
-    <div class="mbr-overlay"></div>
-    <div class="container">
-        <div class="mbr-row align-left">
-            <div class="title-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8">
-                <h3 class="mbr-section-title mbr-fonts-style mbr-bold display-1">Book your Suite now!</h3>
-            </div>
-            <div class="d-flex ai-center mbr-section-btn mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-4 align-center">
-                <a class="btn-primary btn display-7" href="tel:+639089893248">
-                    <span class="fa fa-phone mbr-iconfont mbr-iconfont-btn">
-                        <svg width="100%" height="100%" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                            <path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"></path>
-                        </svg></span>0908 989 3248</a>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
 <!-- photos -->
 <section class="cid-photos" id="photos">
     <div class="container">
@@ -2784,17 +2764,7 @@
         <div class="mbr-row mbr-px-2 link-items mbr-jc-c mbr-fonts-style display-7">
             <p class="mbr-text fLink mbr-px-1"><a class="mbr-white" on="tap:legal" role="button" tabindex="0">Legal Notice</a></p>
             <p class="mbr-text fLink mbr-px-1"><a class="mbr-white" on="tap:privacy" role="button" tabindex="0">Privacy Policy</a></p>
-            <p class="mbr-text fLink mbr-px-1">
-                <!--page counter-->
-                <?php include "counter.php"; ?>
-                <a class="mbr-white" on="tap:visitor" role="button" tabindex="0">
-                    <span class="mbr-iconfont mbr-iconfont-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="100%" height="100%">
-                        <path d="M7 24h-6v-6h6v6zm8-9h-6v9h6v-9zm8-4h-6v13h6v-13zm0-11l-6 1.221 1.716 1.708-6.85 6.733-3.001-3.002-7.841 7.797 1.41 1.418 6.427-6.39 2.991 2.993 8.28-8.137 1.667 1.66 1.201-6.001z"/>
-                    </svg></span>
-                    <?php echo $all;?></a>
-            </p>
-            <!--            <p class="mbr-text fLink mbr-px-1"><a class="text-white" on="tap:terms" role="button" tabindex="0">Terms and Conditions</a></p>-->
-        </div>
+</div>
 
         <amp-lightbox scrollable id="legal" layout="nodisplay">
             <div class="modalbox">
@@ -2851,46 +2821,6 @@
             </div>
         </amp-lightbox>
 
-        <amp-lightbox scrollable id="visitor" layout="nodisplay">
-            <div class="modalbox">
-                <div class="modal-content slideInDown">
-                    <button class='modal-close' on='tap:visitor.close' role='button' tabindex='0'>&times;</button>
-                    <h4 class="display-2">Statistics</h4>
-                    <br>
-                    <table>
-                        <tr>
-                            <th>Online:</th>
-                            <th><?php echo $online;?></th>
-                        </tr>
-                        <tr>
-                            <td>Yesterday:</td>
-                            <td><?php echo $yesterday;?></td>
-                        </tr>
-                        <tr>
-                            <td>Week:</td>
-                            <td><?php echo $week;?></td>
-                        </tr>
-                        <tr>
-                            <td>Month:</td>
-                            <td><?php echo $month;?></td>
-                        </tr>
-                        <tr>
-                            <td>Year:</td>
-                            <td><?php echo $year;?></td>
-                        </tr>
-                        <tr>
-                            <th>Total:</th>
-                            <th><?php echo $all;?></th>
-                        </tr>
-                        <tr>
-                            <td>Record (<?php echo date("m/d/Y", $record_time) ?>):</td>
-                            <td><?php echo $record;?></td>
-                        </tr>
-                    </table>
-                    <button class='modalbox-done btn-primary btn display-7' on='tap:visitor.close' role='button' tabindex='0'>CLOSE</button>
-                </div>
-            </div>
-        </amp-lightbox>
 
         <div class="copyright mbr-px-2 mbr-flex mbr-jc-c">
             <p class="mbr-text mbr-fonts-style mbr-white align-center display-7">© <span>2020</span> <span>Little Bridges Camiguin</span></p>
